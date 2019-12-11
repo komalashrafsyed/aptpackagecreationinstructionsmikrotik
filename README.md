@@ -201,7 +201,9 @@ $ sudo vim distributions</br>
 </b>
 
 <img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-3.png" >
---------
+</br>
+
+-------- 
 <b>distributions </b> file changed </br>
 --------
 
