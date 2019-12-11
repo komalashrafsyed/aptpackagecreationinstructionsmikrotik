@@ -191,7 +191,6 @@ sub     rsa3072 2019-11-28 [E] [expires: 2021-11-27] </br>
 
 <b>Step 7:</b> After the above commands has run successfully, and you have a key with you in a seperate file, then run the following commands. </br> Before running the following commands, navigate to position at directory '~/MikrotikRouterPingUtility' as shown in the image below
 </br>
-<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-3.png" >
 
 <b>
 $ sudo apt-get install reprepro </br>
@@ -201,6 +200,7 @@ $ touch distributions </br>
 $ sudo vim distributions</br>
 </b>
 
+<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-3.png" >
 --------
 <b>distributions </b> file changed </br>
 --------
