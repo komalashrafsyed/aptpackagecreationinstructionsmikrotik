@@ -4,7 +4,7 @@ This walkthrough takes you step by step on how to create an apt package from you
 it is inspired by this <a href="https://medium.com/bluekiri/packaging-a-net-core-service-for-ubuntu-4f8e9202d1e5">article</a>
 
 # Deployment Steps
-<b>Step 1:</b> You need to <b>'Download Code'</b> for your .NET Core Application from <a href="https://github.com/komalashrafsyed/MikrotikRouterPingUtiltiy.git">here</a> </br>
+<b>Step 1:</b> You need to <b>'Download Code'</b> for your .NET Core Application from <a href="https://github.com/komalashrafsyed/MikrotikRouterPingUtility.git">here</a> </br>
 
 use the <b>git clone codeurl</b> command to download the code to your VM </br>
 
@@ -22,7 +22,7 @@ $ sudo apt-get install dotnet-sdk-3.0</br>
 $ sudo dotnet --version</br>
 
 
-$ git clone https://github.com/komalashrafsyed/MikrotikRouterPingUtiltiy.git</br></b>
+$ git clone https://github.com/komalashrafsyed/MikrotikRouterPingUtility.git</br></b>
 #cd into the code folder at PingAsync level 
 </br>
 <b>
@@ -47,14 +47,14 @@ $ sudo dotnet clean</br>
 $ sudo rm -rf bin obj</br>
 
 $ cd ..</br>
-$ sudo mv MikrotikPingUtility pingasync-2.0</br>
-$ sudo tar cvzf pingasync-2.0.tar.gz pingasync-2.0</br>
-$ sudo cd pingasync-2.0</br>
-$ sudo dh_make -f ../pingasync-2.0.tar.gz -s -c mit -n</br>
+$ sudo mv MikrotikAPIPing mikrotikapiping-2.0</br>
+$ sudo tar cvzf mikrotikapiping-2.0.tar.gz mikrotikapiping-2.0</br>
+$ sudo cd mikrotikapiping-2.0</br>
+$ sudo dh_make -f ../mikrotikapiping-2.0.tar.gz -s -c mit -n</br>
 
 $ cd debian </br>
 $ sudo rm *ex *EX </br>
-$ sudo rm README README.Debian README.source pingasync-docs.docs </br>
+$ sudo rm README README.Debian README.source mikrotikapiping-docs.docs </br>
 </b>
 
 <b>Step 4:</b> After the enviornment has been successfully setup, the following demonstrates Files Changes that need to be made in the following files located in the <b> debian </b> folder. You would use the sudo vim -filename command to open each of the following files and make changes as shown. So for instance your first file would be opened </br>
@@ -64,11 +64,11 @@ $ sudo rm README README.Debian README.source pingasync-docs.docs </br>
 <b>changelog</b> file changed </br>
 --------------------------------------
 
-pingasync (5.0-0ubuntu1) bionic; urgency=medium
+mikrotikapiping (5.0-0ubuntu1) bionic; urgency=medium
 
   * Initial Release.
 
- -- PingAsync Tool <*****syed@microsoft.com>  Wed, 27 Nov 2019 22:37:13 +0000
+ -- MikrotikAPIPing Tool <*****syed@microsoft.com>  Wed, 27 Nov 2019 22:37:13 +0000
 
 <img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/changelog.png" >
 
@@ -76,7 +76,7 @@ pingasync (5.0-0ubuntu1) bionic; urgency=medium
 <b>control</b> file changed </br>
 --------------------------------------
 
-Source: pingasync </br>
+Source: mikrotikapiping </br>
 Section: unknown </br>
 Priority: optional</br>
 Maintainer: root <******syed@microsoft.com></br>
@@ -88,7 +88,7 @@ Homepage: <insert the upstream URL, if relevant></br>
 #Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/pingasync.git
 </br>
 
-Package: pingasync</br>
+Package: mikrotikapiping</br>
 Architecture: any</br>
 Depends: ${shlibs:Depends}, ${misc:Depends}</br>
 Description: <insert up to 60 chars description></br>
@@ -114,9 +114,9 @@ override_dh_auto_build: </br>
 override_dh_auto_install: </br>
 	# install application 
 	</br>
-	mkdir -p debian/pingasync/opt/ksyed/pingtool </br>
-	install -D -m 755 bin/Release/netcoreapp3.0/ubuntu.18.04-x64/publish/* debian/pingasync/opt/ksyed/pingtool </br>
-	rm debian/pingasync/opt/ksyed/pingtool/*.pdb #delete pdb
+	mkdir -p debian/mikrotikapiping/opt/ksyed/mikrotikapiping </br>
+	install -D -m 755 bin/Release/netcoreapp3.0/ubuntu.18.04-x64/publish/* debian/mikrotikapiping/opt/ksyed/mikrotikapiping </br>
+	rm debian/mikrotikapiping/opt/ksyed/mikrotikapiping/*.pdb #delete pdb
 	</br>
 
 <img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/rules.png" >
@@ -125,7 +125,7 @@ override_dh_auto_install: </br>
 <b> pingasync.service </b> file changed </br>
 --------------------------------------
 You write the following in console to create a new pingasync.service file </br>
-<b>$ sudo vim pingasync.service </b>
+<b>$ sudo vim mikrotikapiping.service </b>
 </br>
 
 
@@ -135,7 +135,7 @@ After=network.target </br>
 
 [Service] </br>
 Type=simple </br>
-ExecStart=/opt/ksyed/pingtool/pingtool </br>
+ExecStart=/opt/ksyed/mikrotikapiping/mikrotikapiping </br>
 ExecReload=/bin/kill -HUP $MAINPID </br>
 
 [Install] </br>
@@ -170,7 +170,7 @@ $ apt-get install liblttng-ust-dev </br>
 
 <b>
 $ cd ..</br>
-$ sudo dpkg -i pingasync_2.0-0ubuntu1_amd64.deb </br>
+$ sudo dpkg -i mikrotikapiping_2.0-0ubuntu1_amd64.deb </br>
 $ sudo apt-get install gnupg rng-tools </br>
 $ gpg --gen-key </br>
 </b>
@@ -208,7 +208,7 @@ $ sudo vim distributions</br>
 </b>
 </br>
 
-Origin: PingAsync Tool </br>
+Origin: MikrotikAPIPing Tool </br>
 Label: pingasync </br>
 Codename: bionic </br>
 Architectures: amd64 </br>
@@ -225,8 +225,8 @@ SignWith: B501DE17DA19A16F  </br>
  </br>
  </br>
  <b>
-$ sudo reprepro --basedir repo includedeb bionic pingasync_4.0-0ubuntu1_amd64.deb </br>
-$ sudo reprepro --basedir repo includedeb bionic pingasync*.deb </br>
+$ sudo reprepro --basedir repo includedeb bionic mikrotikapiping_4.0-0ubuntu1_amd64.deb </br>
+$ sudo reprepro --basedir repo includedeb bionic mikrotikapiping*.deb </br>
 $ sudo reprepro --basedir repo list bionic </br>
 
 $ sudo gpg --output PUBLIC.KEY --armor --export ******syed@microsoft.com </br>
