@@ -72,7 +72,7 @@ mikrotikapiping (5.0-0ubuntu1) bionic; urgency=medium
 
  -- MikrotikAPIPing Tool <*****syed@microsoft.com>  Wed, 27 Nov 2019 22:37:13 +0000
 
-<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/changelog.png" >
+<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-%20changelog%20.png" >
 
 --------------------------------------
 <b>control</b> file changed </br>
@@ -96,7 +96,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends}</br>
 Description: <insert up to 60 chars description></br>
  <insert long description, indented with spaces></br>
 
-<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/control.png" >
+<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-%20control.png" >
 
 --------------------------------------
 <b>rules</b> file changed </br>
@@ -121,7 +121,7 @@ override_dh_auto_install: </br>
 	rm debian/mikrotikapiping/opt/ksyed/mikrotikapiping/*.pdb #delete pdb
 	</br>
 
-<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/rules.png" >
+<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-rules.png" >
 
 --------------------------------------
 <b> pingasync.service </b> file changed </br>
@@ -144,7 +144,7 @@ ExecReload=/bin/kill -HUP $MAINPID </br>
 WantedBy=multi-user.target </br>
 
 
-<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/pingasyncservice.png" >
+<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-%20%20mikrotikapiping-service.png" >
 
 </br>
 
@@ -187,7 +187,7 @@ uid                    PingAsync Tool <******syed@microsoft.com> </br>
 sub     rsa3072 2019-11-28 [E] [expires: 2021-11-27] </br>
 </br>
 </b>
-<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/gpg%20gen%20key.png" >
+<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-2.png" >
 
 <b>Step 7:</b> After the above commands has run successfully, and you have a key with you in a seperate file, then run the following commands </br> navigate to position at directory '/Komal/Asyn-r-code/' 
 </br>
