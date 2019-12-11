@@ -132,7 +132,7 @@ You write the following in console to create a new pingasync.service file </br>
 
 
 [Unit] </br>
-Description=Ping Async </br>
+Description=MikrotikAPIPing Tool </br>
 After=network.target </br>
 
 [Service] </br>
