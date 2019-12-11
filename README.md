@@ -233,7 +233,7 @@ SignWith: B501DE17DA19A16F  </br>
  </br>
  </br>
  <b>
-$ sudo reprepro --basedir repo includedeb bionic mikrotikapiping_4.0-0ubuntu1_amd64.deb </br>
+$ sudo reprepro --basedir repo includedeb bionic mikrotikapiping_2.0-0ubuntu1_amd64.deb </br>
 $ sudo reprepro --basedir repo includedeb bionic mikrotikapiping*.deb </br>
 $ sudo reprepro --basedir repo list bionic </br>
 
