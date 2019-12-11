@@ -189,8 +189,9 @@ sub     rsa3072 2019-11-28 [E] [expires: 2021-11-27] </br>
 </b>
 <img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-2.png" >
 
-<b>Step 7:</b> After the above commands has run successfully, and you have a key with you in a seperate file, then run the following commands </br> navigate to position at directory '/Komal/Asyn-r-code/' 
+<b>Step 7:</b> After the above commands has run successfully, and you have a key with you in a seperate file, then run the following commands. </br> Before running the following commands, navigate to position at directory '/Komal/Asyn-r-code/'as shown in the image below
 </br>
+<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-3.png" >
 
 <b>
 $ sudo apt-get install reprepro </br>
@@ -219,6 +220,9 @@ Description: Personal repository </br>
 SignWith: B501DE17DA19A16F  </br>
 
 -------
+
+
+
 
 <b>Step 8:</b> After the distributions file has been successfully changed, now we will upload the apt deb file to a git repository of our choice so that users wanting to use our apt distribution package will be able to download and install it. The following describes a way to upload the consolidated folder with the repo folder</br>
  #give path of repo and also of the deb file if you in the folder where both
