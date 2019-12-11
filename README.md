@@ -124,7 +124,7 @@ override_dh_auto_install: </br>
 <img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-rules.png" >
 
 --------------------------------------
-<b> pingasync.service </b> file changed </br>
+<b> mikrotikapiping.service </b> file changed </br>
 --------------------------------------
 You write the following in console to create a new pingasync.service file </br>
 <b>$ sudo vim mikrotikapiping.service </b>
