@@ -182,7 +182,7 @@ $ gpg --gen-key </br>
 </br>
 <b>
 pub   rsa3072 2019-12-11 [SC] [expires: 2021-12-10]
-      18F3096167A71C62FFF155D89BD90DE5F380A52C </br>
+      18FXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXA52C </br>
 uid                      MikrotikAPIPing Tool <******syed@microsoft.com> </br>
 sub   rsa3072 2019-12-11 [E] [expires: 2021-12-10] </br>
 </br>
