@@ -212,7 +212,7 @@ $ sudo vim distributions</br>
 </br>
 
 Origin: MikrotikAPIPing Tool </br>
-Label: pingasync </br>
+Label: mikrotikapiping </br>
 Codename: bionic </br>
 Architectures: amd64 </br>
 Components: main </br>
