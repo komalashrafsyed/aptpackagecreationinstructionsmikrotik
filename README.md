@@ -66,7 +66,7 @@ $ sudo rm README README.Debian README.source mikrotikapiping-docs.docs </br>
 <b>changelog</b> file changed </br>
 --------------------------------------
 
-mikrotikapiping (5.0-0ubuntu1) bionic; urgency=medium
+mikrotikapiping (2.0-0ubuntu1) bionic; urgency=medium
 
   * Initial Release.
 
