@@ -49,7 +49,7 @@ $ sudo rm -rf bin obj</br>
 $ cd ..</br>
 $ sudo mv MikrotikAPIPing mikrotikapiping-2.0</br>
 $ sudo tar cvzf mikrotikapiping-2.0.tar.gz mikrotikapiping-2.0</br>
-$ sudo cd mikrotikapiping-2.0</br>
+$ cd mikrotikapiping-2.0</br>
 $ sudo dh_make -f ../mikrotikapiping-2.0.tar.gz -s -c mit -n</br>
 
 $ cd debian </br>
