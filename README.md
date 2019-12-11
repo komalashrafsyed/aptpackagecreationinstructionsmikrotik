@@ -1,6 +1,6 @@
 
 # Apt Tool Package Creation
-This walkthrough takes you step by step on how to create an apt package from your .NET Core 3.0 application code so that the same apt package can be easily installed on user's client machine using a simple apt-install command.
+This walkthrough takes you step by step on how to create an apt package from your .NET Core 3.0 application code for a mikrotikapi based ping so that the same apt package can be easily installed on user's client machine using a simple apt-install command.
 it is inspired by this <a href="https://medium.com/bluekiri/packaging-a-net-core-service-for-ubuntu-4f8e9202d1e5">article</a>
 
 # Deployment Steps
@@ -56,6 +56,8 @@ $ cd debian </br>
 $ sudo rm *ex *EX </br>
 $ sudo rm README README.Debian README.source mikrotikapiping-docs.docs </br>
 </b>
+
+<img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/MIKROTIKAPT%20PACKAGE%20-1.png" >
 
 <b>Step 4:</b> After the enviornment has been successfully setup, the following demonstrates Files Changes that need to be made in the following files located in the <b> debian </b> folder. You would use the sudo vim -filename command to open each of the following files and make changes as shown. So for instance your first file would be opened </br>
 <b>$ sudo vim changelog </b> </br>
