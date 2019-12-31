@@ -23,7 +23,7 @@ $ sudo dotnet --version</br>
 
 
 $ git clone https://github.com/komalashrafsyed/MikrotikRouterPingUtility.git</br></b>
-#cd into the code folder at PingAsync level 
+#cd into the code folder at /MikrotikRouterPingUtility/MikrotikAPIPing folder level
 </br>
 <b>
 $ sudo dotnet build </br>
